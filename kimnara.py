@@ -102,9 +102,7 @@ while True:
             ma15 = get_ma15(coin_name)
             current_price = get_current_price(coin_name)
             print(target_price)
-            print(ma15)
             krw = get_balance("KRW")
-            print(krw)
             # 첫번째 구매->전량매수 ///
             if target_price < current_price and ma15 < current_price:
                 # 첫번째 조건을 만족하고 count==0 => 마감날 전량 매도한 뒤 전량 현금 보유일때,
